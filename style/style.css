@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50px 200px 200px;
+    grid-template-rows: 50px 50px 50px;
+    padding: 20px;
+}
+
+header > .div-header-icon {
+    background-color: blue;
+    color: white;
+    margin-left: 40px;
+    width: 55px;
+    border-radius: 10px;
+    height: 65px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+header > div.div-header-icon > .material-symbols-outlined {
+    font-size: 3em;
+    margin-top: 8px;
+}
+
+header > h1 {
+    margin-left: 50px;
+    text-shadow: 2px 2px 3px white;
+}
+
+header > nav {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
