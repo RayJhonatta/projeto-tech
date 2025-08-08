@@ -41,7 +41,4 @@ header > h1 {
 
 header > nav {
     font-size: 1.2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
