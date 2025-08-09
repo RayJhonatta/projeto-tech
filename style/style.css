@@ -8,37 +8,85 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darkgray;
+    background-color: rgb(176, 176, 176);
 }
 
 header {
     display: grid;
-    grid-template-columns: 50px 200px 200px;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: repeat(2, 115px) 1fr;
+    grid-template-rows: auto;
     padding: 20px;
+    align-items: center;
 }
 
 header > .div-header-icon {
     background-color: blue;
     color: white;
-    margin-left: 40px;
-    width: 55px;
-    border-radius: 10px;
-    height: 65px;
+    width: 40px;
+    height: 55px;
     text-align: center;
     margin-top: 4px;
+    border-radius: 5px;
 }
 
 header > div.div-header-icon > .material-symbols-outlined {
-    font-size: 3em;
-    margin-top: 8px;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 header > h1 {
-    margin-left: 50px;
+    position: relative;
+    right: 70px;
+    width: 20px;
     text-shadow: 2px 2px 3px white;
+    font-size: 1.5em;
+    margin-top: 15px;
 }
 
 header > nav {
-    font-size: 1.2em;
+    font-size: 1em;
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    right: 53px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+header > nav > a:hover {
+    color: blue;
+    text-shadow: 2px 2px 3px white;
+    transform: scale(1.1);
+}
+
+main {
+    background-color: white;
+    
+}
+
+.main-img > img {
+    width: 414px;
+}
+
+.main-img > .main-img-words {
+    position: absolute;
+    top: 230px;
+    color: white;
+    padding-left: 20px;
+}
+
+.main-img > .main-img-words > h2 {
+    margin-bottom: 20px; 
+    font-size: 1.8em;   
+}
+
+.main-img > .main-img-words > p {
+    font-size: 1.1em;
+    line-height: 1.4em;
 }
